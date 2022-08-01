@@ -72,21 +72,3 @@ def fightBoss(askHeroName, askTotalAttack, askCDMG, askCritRate, totalHitRate, a
 			print("None")
 	except Exception as e:
 		print(e)
-
-def test(hitcount):
-	fBoss = Boss()
-	LoadBossInformation = fBoss.ShowBoss()
-	LoadBossInformation.pop(0)
-
-	hpBoss = int(LoadBossInformation[1][5])
-	atkhero = int(12321232 * hitcount)
-	print(NumericGrouping(hpBoss))
-	while hitcount > 0 :
-		hitcount -= 1
-		hpBoss -= atkhero
-		print(NumericGrouping(hpBoss))
-		if hitcount == 0:
-			print("Reached")
-
-	sadf = hpBoss / atkhero
-	print(NumericGrouping(round(sadf)))
