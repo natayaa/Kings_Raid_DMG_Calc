@@ -1,8 +1,6 @@
 import sys
 import gamefunc as gf
 
-
-
 def main():
 	gf.animationLoading()
 	print("\n")
